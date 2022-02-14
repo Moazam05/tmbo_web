@@ -1,0 +1,25 @@
+.inside-footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: rgb(242, 242, 242);
+  padding: 12px 0px !important;
+}
+
+.inside-footer-data {
+  display: flex;
+  margin-left: 270px;
+  color: #000;
+  font-weight: 500;
+  cursor: pointer;
+  div {
+    margin-right: 45px;
+  }
+}
+
+@media (max-width: 576px) {
+  .inside-footer {
+    display: none;
+  }
+}

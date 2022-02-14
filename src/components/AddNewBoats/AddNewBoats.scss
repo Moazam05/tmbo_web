@@ -1,0 +1,200 @@
+.add-new-boats-wrapper {
+  padding: 0px 20px;
+  .add-new {
+    color: #000;
+    font-size: 22px;
+    font-weight: bold;
+    padding-left: 30px;
+  }
+  .boat-card {
+    background: #f9f9fb;
+    border: 1px solid #f9f9fb;
+    border-radius: 4px;
+    margin: 20px 0px;
+    padding: 20px 30px;
+    // height: 400px;
+    // max-height: 400px;
+    min-height: 500px;
+    margin-bottom: 50px;
+
+    .tell-about {
+      color: #000;
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    .location-boat {
+      color: #000;
+      font-size: 18px;
+      font-weight: 500;
+      margin: 10px 0px;
+    }
+
+    .boat-detail {
+      color: #000;
+      font-size: 18px;
+      font-weight: 500;
+      margin: 10px 0px 0px 0px;
+      // margin-top: 180px;
+    }
+  }
+
+  .form-row.both {
+    display: flex;
+    justify-content: space-between;
+    .form-group.col-6 {
+      width: 49%;
+      label {
+        // margin-top: 10px;
+        margin: 10px 0px 5px 0px;
+      }
+    }
+    .form-group.col-12 {
+      label {
+        // margin-top: 10px;
+        margin: 10px 0px 5px 0px;
+      }
+    }
+  }
+
+  .description-insuran {
+    // background: #0C294D;
+    // border-radius: 2px;
+    // padding: 0px 3px;
+    // font-weight: 400;
+    // color: #fff;
+  }
+
+  // lien radio button css
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+$primary-color: #00005c; // Change color here. C'mon, try it!
+$text-color: mix(#000, $primary-color, 64%);
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: $text-color;
+  // font-size: calc(1em + 1.25vw);
+  background-color: mix(#fff, $primary-color, 90%);
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+label {
+  display: flex;
+  cursor: pointer;
+  font-weight: 500;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 0.375em;
+
+  input {
+    position: absolute;
+    left: -9999px;
+    &:checked + span {
+      background-color: mix(#fff, $primary-color, 84%);
+      &:before {
+        box-shadow: inset 0 0 0 0.4375em $primary-color;
+      }
+    }
+  }
+  span {
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    padding: 0.375em 0.75em 0.375em 0.375em;
+    border-radius: 99em; // or something higher...
+    transition: 0.25s ease;
+    &:hover {
+      background-color: mix(#fff, $primary-color, 84%);
+    }
+    &:before {
+      display: flex;
+      flex-shrink: 0;
+      content: '';
+      background-color: #fff;
+      width: 1.5em;
+      height: 1.5em;
+      border-radius: 50%;
+      margin-right: 0.375em;
+      transition: 0.25s ease;
+      box-shadow: inset 0 0 0 0.125em $primary-color;
+    }
+  }
+}
+.img-block-boat {
+  border-radius: 10px;
+  text-align: center;
+  margin: 12px 0px;
+  height: 200px;
+  border: 1px solid #cccccc;
+  width: 500px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+  }
+}
+.image-item__btn-wrapper {
+  position: relative;
+  cursor: pointer;
+}
+
+.close-icon-boat-img {
+  position: absolute;
+  left: 485px;
+  bottom: 197px;
+  color: #d32f2f;
+}
+
+.inputGroup.caption {
+  height: 69px;
+}
+label.uscg-certified {
+  padding: 24px 20px;
+}
+.radion-lable-boat {
+  cursor: default;
+}
+
+.form-group.mt-3.next-prev {
+  display: flex;
+  justify-content: space-between;
+}
+
+button.btn.btn-primary.back {
+  background: #0c294d;
+  border: 1px solid #0c294d;
+}
+
+.btn.btn-primary.next {
+  background: #0c294d;
+  border: 1px solid #0c294d;
+}
+
+.form-group.mt-3.first {
+  display: flex;
+  justify-content: end;
+
+  .btn.btn-primary.next {
+    background: #0c294d;
+    border: 1px solid #0c294d;
+  }
+}
+
+.form-group.mt-3.next-prev.map {
+  margin-top: 350px !important;
+  display: flex;
+  justify-content: end;
+}

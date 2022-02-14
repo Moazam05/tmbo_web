@@ -1,0 +1,58 @@
+// img + show detail
+.img-city-booking {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+
+  .outer-city {
+    display: flex;
+    align-items: center;
+  }
+
+  .inner-city {
+    margin-left: 20px;
+    :nth-child(1) {
+      color: #1b3659;
+      font-size: 20px;
+      font-weight: 500;
+    }
+    :nth-child(2) {
+      color: #000;
+      font-size: 18px;
+      font-weight: bold;
+    }
+  }
+
+  .show-details {
+    font-size: 18px;
+    font-weight: 500;
+    color: #a60c0c;
+    cursor: pointer;
+  }
+}
+
+// border
+
+.border-card-booking {
+  border: 0.5px solid #eeeeee;
+  border-top-left-radius: 1px;
+}
+
+// reviews
+.star-date-booking {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+
+  .star {
+    color: #1b3659;
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  .date {
+    color: #acacac;
+    font-size: 18px;
+    font-weight: bold;
+  }
+}

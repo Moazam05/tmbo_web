@@ -1,0 +1,41 @@
+.sign-up-wrap {
+  label {
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    padding-bottom: 4px;
+  }
+
+  .name-field {
+    display: flex;
+    justify-content: space-between;
+    .form-group {
+      width: 47%;
+    }
+  }
+
+  .form-group {
+    margin-bottom: 15px;
+  }
+
+  .MuiFormControl-root.MuiTextField-root {
+    background: white;
+    border: 1px solid white;
+    width: 100%;
+    height: 40px;
+    border-radius: 2px;
+  }
+
+  ::after {
+    border-bottom: none !important;
+  }
+
+  ::before {
+    border-bottom: none !important;
+  }
+
+  .inner-center-card.sign-up {
+    width: 600px;
+    padding: 25px 50px;
+  }
+}
