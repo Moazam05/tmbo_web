@@ -164,15 +164,8 @@ const StepZero = (props) => {
     <Formik
       initialValues={props.data}
       onSubmit={handleSubmit}
-      // validationSchema={Yup.object().shape({
-      //   location: Yup.object().shape({
-      //     value: Yup.string().required('Address is required'),
-      //     address: Yup.string().required('Invalid address'),
-      //   }),
-      // })}
-      validationSchema={Yup.object().shape({
-        coordinates: Yup.string().required('Coordinates is required.'),
-      })}
+      validationSchema={Yup.object().shape({})}
+
       // initialValues={{ ...this.props.location }}
       // onSubmit={(fields) => {
       //   alert('SUCCESS!! :-)\n\n' + JSON.stringify(fields, null, 4));
@@ -194,21 +187,14 @@ const StepZero = (props) => {
             <div className='row'>
               <div className='col-sm-12'>
                 <div className='location-boat'>Add Boat Location</div>
-                {/* <MapContainer
+                <MapContainer
                   handleChange={handleChange}
                   handleSelect={handleSelect}
                   address={address}
                   mapCenter={mapCenter}
-                /> */}
+                />
 
-                <Field name='location' component={MapContainer} />
-
-                {/* <Field
-                  type='text'
-                  name='coordinates'
-                  label='Coordinates'
-                  component={FormikPlacesAutoComplete} */}
-                {/* /> */}
+                {/* <Field name='location' component={MapContainer} /> */}
 
                 {/* <ErrorMessage name='location.value' />
                 <ErrorMessage name='location.address' /> */}
@@ -1407,28 +1393,3 @@ const StepSeven = (props) => {
     </Formik>
   );
 };
-
-// import React from 'react';
-// import Form from '../Form/Form';
-// import './AddNewBoats.scss';
-
-// import SidebarBoats from '../Sidebar/SidebarBoats';
-
-// const AddNewBoats = () => {
-//   return (
-//     <div>
-//       {' '}
-//       <SidebarBoats newBoat={true}>
-//         <div className='add-new-boats-wrapper'>
-//           <div className='add-new'>Add Boat Deatils</div>
-//           <div className='boat-card'>
-//             <div className='tell-about'>Tell us about your boat</div>
-//             <Form />
-//           </div>
-//         </div>
-//       </SidebarBoats>
-//     </div>
-//   );
-// };
-
-// export default AddNewBoats;

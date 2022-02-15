@@ -38,6 +38,7 @@ import ExpandLess from '@mui/icons-material/ExpandLess';
 import ExpandMore from '@mui/icons-material/ExpandMore';
 import StarBorder from '@mui/icons-material/StarBorder';
 import InsideFooter from '../Footer/InsideFooter/InsideFooter';
+import Logout from '../Login/Logout/Logout';
 
 const drawerWidth = 240;
 
@@ -477,6 +478,10 @@ const Sidebar = ({ children }) => {
                 <DirectionsBoatIcon />
               </ListItemIcon>
               <ListItemText primary='My Boats' />
+            </ListItemButton>
+
+            <ListItemButton>
+              <Logout />
             </ListItemButton>
           </List>
           ;

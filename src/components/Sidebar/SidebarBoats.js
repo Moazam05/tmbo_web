@@ -28,6 +28,7 @@ import SailingIcon from '@mui/icons-material/Sailing';
 import DirectionsBoatIcon from '@mui/icons-material/DirectionsBoat';
 import HomeIcon from '@mui/icons-material/Home';
 import { useNavigate, useLocation } from 'react-router-dom';
+import Logout from '../Login/Logout/Logout';
 import './Sidebar.scss';
 
 import logo from '../../images/Main-logo.png';
@@ -340,7 +341,7 @@ const SidebarBoats = ({ children, newBoat }) => {
                     onClick={dropDownHandler}
                     startIcon={<AddIcon />}
                   >
-                    Add New Boat5 {newBoat}
+                    Add New Boat {newBoat}
                     {loading && <div className='button-loader-boat'></div>}
                   </Button>
                 </Typography>
@@ -572,6 +573,10 @@ const SidebarBoats = ({ children, newBoat }) => {
                 <DirectionsBoatIcon />
               </ListItemIcon>
               <ListItemText primary='My Boats' />
+            </ListItemButton>
+
+            <ListItemButton>
+              <Logout />
             </ListItemButton>
           </List>
           ;
